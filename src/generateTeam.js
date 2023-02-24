@@ -6,7 +6,7 @@ const generateLastProps = (employee) => {
     if(employee.getRole() == "Engineer") {
         return `Github: ${employee.getGithub()}`
     }
-    if(employee.getRole() == "Engineer") {
+    if(employee.getRole() == "Intern") {
         return `School: ${employee.getSchool()}`
     }
 }
@@ -39,7 +39,7 @@ const generateTeam = (teamArray) => {
             <ul class="list-group list-group-flush">
              <li class="list-group-item">${employee.getId()}</li>
              <li class="list-group-item"><a href = "mailto: ${employee.getEmail()}">${employee.getEmail()}</a></li>
-             <li class="list-group-item"><a href = "https://github.com/${generateLastProps(employee)}">${generateLastProps(employee)}</a></li>
+             <li class="list-group-item">${generateLastProps(employee)}</li>
             </ul>
           </div>
           </div>

@@ -22,7 +22,7 @@ node.js, npm inquirier and jest
     
 ## Usage
     
-See demo
+See demo here: https://drive.google.com/file/d/1W1M0idXzPAhXkgbqVPYoWht8-kdvtYea/view
     
 
   ## License
