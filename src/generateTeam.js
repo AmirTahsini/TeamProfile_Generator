@@ -1,13 +1,13 @@
 const generateLastProps = (employee) => {
 
     if(employee.getRole() == "Manager") {
-        return `<h2>${employee.getOfficeNumber()}</h2>`
+        return `<h2>Office Number: ${employee.getOfficeNumber()}</h2>`
     }
     if(employee.getRole() == "Engineer") {
-        return `<h2>${employee.getGithub()}</h2>`
+        return `Github: ${employee.getGithub()}`
     }
     if(employee.getRole() == "Engineer") {
-        return `<h2>${employee.getSchool()}</h2>`
+        return `School: ${employee.getSchool()}`
     }
 }
 
@@ -22,6 +22,7 @@ const generateTeam = (teamArray) => {
         <title>Team Profile Generator</title>
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+        <link rel="stylesheet" type="text/css" href="style.css" /> 
     </head>
     <header>
         <h1>Team Profile Generator</h1>
@@ -38,7 +39,7 @@ const generateTeam = (teamArray) => {
             <ul class="list-group list-group-flush">
              <li class="list-group-item">${employee.getId()}</li>
              <li class="list-group-item"><a href = "mailto: ${employee.getEmail()}">${employee.getEmail()}</a></li>
-             <li class="list-group-item">${generateLastProps(employee)}</li>
+             <li class="list-group-item"><a href = "https://github.com/${generateLastProps(employee)}">${generateLastProps(employee)}</a></li>
             </ul>
           </div>
           </div>

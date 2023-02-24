@@ -1,0 +1,26 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+    line-height: 1.5;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    width: 100%;
+}
+
+h1 {
+    text-align: center;
+    color: gray;
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+body {
+    width: 100%;
+    margin: 20px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
